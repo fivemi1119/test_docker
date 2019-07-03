@@ -6,7 +6,7 @@ MAINTAINER Xin Wen <nclxwen@gmail.com>
 RUN mkdir -p /script
 
 #在容器中下载可执行文件
-RUN 
+RUN apt-get update
 
 RUN apt-get -y install git
 
