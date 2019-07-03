@@ -1,7 +1,7 @@
 FROM daocloud.io/xin_cqu/matlab_config
+
 MAINTAINER Xin Wen <nclxwen@gmail.com>
 
-RUN apt -y install git
 
 RUN mkdir -p /script
 
