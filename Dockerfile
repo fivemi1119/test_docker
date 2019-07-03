@@ -12,7 +12,7 @@ RUN apt-get -y install git
 
 RUN cd /script && git clone https://github.com/Xin-cqu/test_docker.git
 
-ADD test /root/matlab_script/test
+ADD test.mat /root/matlab_script/test
 
 RUN chmod 777 -R /root/matlab_script/
 
