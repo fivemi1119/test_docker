@@ -16,4 +16,4 @@ RUN chmod 777 -R /root/matlab_script/
 
 RUN rm -rf /script
 
-ENTRYPOINT["/root/matlab_script/test_data"]
+ENTRYPOINT ["/root/matlab_script/test_data"]
