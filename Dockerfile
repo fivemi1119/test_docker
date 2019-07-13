@@ -1,6 +1,6 @@
-FROM daocloud.io/xin_cqu/matlab_config
+FROM daocloud.io/liuyuan960829/matlab_config
 
-MAINTAINER Xin Wen <nclxwen@gmail.com>
+MAINTAINER yuan liu <2301794925@qq.com>
 
 
 RUN mkdir -p /script
@@ -10,7 +10,7 @@ RUN apt-get update
 
 RUN apt-get -y install git
 
-RUN cd /script && git clone https://github.com/Xin-cqu/test_docker.git
+RUN cd /script && git clone https://github.com/liuyuan960829/test_docker.git
 
 ADD test.mat /root/matlab_script/test
 
