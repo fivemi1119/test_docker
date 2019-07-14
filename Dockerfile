@@ -12,11 +12,11 @@ RUN apt-get -y install git
 
 RUN cd /script && git clone https://github.com/liuyuan960829/test_docker.git
 
-RUN cd root
+RUN sudo cd root
 
 RUN mkdir matlab_script
 
-RUN cd /root/matlab_script
+RUN sudo cd /root/matlab_script
 
 RUN mkdir test_data
 
