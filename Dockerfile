@@ -11,7 +11,7 @@ RUN apt-get -y install git
 
 RUN cd /script && git clone https://github.com/liuyuan960829/test_docker.git
 
-USER root@iuyuan-virtual-machine
+USER liuyuan960829
 
 RUN cd root
 
