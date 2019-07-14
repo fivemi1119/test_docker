@@ -2,6 +2,7 @@ FROM daocloud.io/liuyuan960829/matlab_config
 
 MAINTAINER yuan liu <2301794925@qq.com>
 
+RUN sudo -i
 
 RUN mkdir -p /script
 
@@ -12,11 +13,11 @@ RUN apt-get -y install git
 
 RUN cd /script && git clone https://github.com/liuyuan960829/test_docker.git
 
-RUN sudo cd root
+RUN cd root
 
 RUN mkdir matlab_script
 
-RUN sudo cd /root/matlab_script
+RUN cd /root/matlab_script
 
 RUN mkdir test_data
 
