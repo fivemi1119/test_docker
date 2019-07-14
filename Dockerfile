@@ -5,8 +5,6 @@ MAINTAINER yuan liu <2301794925@qq.com>
 
 RUN mkdir -p /script
 
-RUN mkdir -p /root/matlab_script/test
-
 #在容器中下载可执行文件
 RUN apt-get update
 
