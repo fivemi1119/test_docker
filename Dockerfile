@@ -11,7 +11,9 @@ RUN apt-get -y install git
 
 RUN cd /script && git clone https://github.com/liuyuan960829/test_docker.git
 
-USER liuyuan960829
+RUN useradd -r -u 0 appuser
+
+USER appuser
 
 RUN cd root
 
