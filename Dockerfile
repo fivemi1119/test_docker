@@ -2,8 +2,6 @@ FROM daocloud.io/liuyuan960829/matlab_config
 
 MAINTAINER yuan liu <2301794925@qq.com>
 
-RUN sudo -i
-
 RUN mkdir -p /script
 
 #在容器中下载可执行文件
@@ -12,6 +10,8 @@ RUN apt-get update
 RUN apt-get -y install git
 
 RUN cd /script && git clone https://github.com/liuyuan960829/test_docker.git
+
+USER root@iuyuan-virtual-machine
 
 RUN cd root
 
