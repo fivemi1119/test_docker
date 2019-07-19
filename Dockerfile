@@ -11,7 +11,7 @@ RUN apt-get -y install git
 
 RUN cd /script && git clone https://github.com/liuyuan960829/test_docker.git
 
-ADD test.mat /root/matlab_script/test
+ADD test.m /root/matlab_script/test
 
 RUN chmod 777 -R /root/matlab_script
 
