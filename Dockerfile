@@ -11,10 +11,10 @@ RUN apt-get -y install git
 
 RUN cd /script && git clone https://github.com/liuyuan960829/test_docker.git
 
-ADD test_data /root/matlab_script/test_data
+ADD test.mat /root/matlab_script/test
 
 RUN chmod 777 -R /root/matlab_script
 
 RUN rm -rf /script
 
-ENTRYPOINT ["/root/matlab_script/test_data"]
+ENTRYPOINT ["/root/matlab_script/test"]
